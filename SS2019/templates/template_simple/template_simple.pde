@@ -1,11 +1,11 @@
+// White
 color white = #f1f1f1;
+
+// Red
 color red = #EC1A1A;
 
-void setup() {  
-  textMode(SHAPE);
-  size(586, 810, P2D);
-  pixelDensity(2);
-
+void setup() {
+  size(586, 810);
 }
 
 void draw() {

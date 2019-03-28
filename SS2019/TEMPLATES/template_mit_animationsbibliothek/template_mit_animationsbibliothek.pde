@@ -8,6 +8,9 @@ float a = 0;
 import com.hamoid.*;
 VideoExport videoExport;
 
+import de.looksgood.ani.*;
+AniSequence seq;
+
 void setup() {  
 
   size(586, 810, P2D);
@@ -20,6 +23,21 @@ void setup() {
   videoExport = new VideoExport(this, "video.mp4");
   videoExport.setFrameRate(30);  
   videoExport.startMovie();
+
+  Ani.init(this);
+
+  seq = new AniSequence(this);
+  seq.beginSequence();
+
+  seq.beginStep();
+
+  seq.add(Ani.to(this, 2, "a", 5));
+  seq.endStep();
+
+  seq.endSequence();
+
+  // start the whole sequence
+  seq.start();
 }
 
 void draw() {
