@@ -15,10 +15,10 @@ Input #0, rawvideo, from 'pipe:':
     Stream #0:0: Video: rawvideo (RGB[24] / 0x18424752), rgb24, 1172x1620, 1367020 kb/s, 30 tbr, 30 tbn, 30 tbc
 Stream mapping:
   Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
-[swscaler @ 0x7f9f63000000] Warning: data is not aligned! This can lead to a speed loss
-[libx264 @ 0x7f9f62801200] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
-[libx264 @ 0x7f9f62801200] profile High, level 4.0
-[libx264 @ 0x7f9f62801200] 264 - core 152 r2854 e9a5903 - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=15.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[swscaler @ 0x7f94e1012000] Warning: data is not aligned! This can lead to a speed loss
+[libx264 @ 0x7f94e1001200] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x7f94e1001200] profile High, level 4.0
+[libx264 @ 0x7f94e1001200] 264 - core 152 r2854 e9a5903 - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=15.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
 Output #0, mp4, to '/Users/tim/Documents/GitHub/programming-posters/SS2019/TEMPLATES/template_advanced/video.mp4':
   Metadata:
     comment         : Exported using https://github.com/hamoid/VideoExport-for-Processing
@@ -28,21 +28,22 @@ Output #0, mp4, to '/Users/tim/Documents/GitHub/programming-posters/SS2019/TEMPL
       encoder         : Lavc58.18.100 libx264
     Side data:
       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
-frame=   16 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   32 fps= 31 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   48 fps= 32 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   67 fps= 33 q=21.0 size=       0kB time=00:00:00.46 bitrate=   0.8kbits/s speed=0.228x    frame=   84 fps= 33 q=21.0 size=       0kB time=00:00:01.03 bitrate=   0.4kbits/s speed=0.405x    frame=  100 fps= 31 q=-1.0 Lsize=      27kB time=00:00:03.23 bitrate=  67.7kbits/s speed=   1x    
-video:25kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 8.399034%
-[libx264 @ 0x7f9f62801200] frame I:1     Avg QP: 2.33  size: 17432
-[libx264 @ 0x7f9f62801200] frame P:25    Avg QP: 7.67  size:    89
-[libx264 @ 0x7f9f62801200] frame B:74    Avg QP: 5.66  size:    66
-[libx264 @ 0x7f9f62801200] consecutive B-frames:  1.0%  0.0%  3.0% 96.0%
-[libx264 @ 0x7f9f62801200] mb I  I16..4: 97.7%  0.0%  2.3%
-[libx264 @ 0x7f9f62801200] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.0%  0.0%  0.0%  0.0%  0.0%    skip:100.0%
-[libx264 @ 0x7f9f62801200] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.0%  0.0%  0.0%  direct: 0.0%  skip:100.0%  L0: 2.8% L1:97.2% BI: 0.0%
-[libx264 @ 0x7f9f62801200] 8x8 transform intra:0.0% inter:6.5%
-[libx264 @ 0x7f9f62801200] coded y,uvDC,uvAC intra: 1.2% 2.8% 2.8% inter: 0.0% 0.0% 0.0%
-[libx264 @ 0x7f9f62801200] i16 v,h,dc,p: 99%  0%  1%  0%
-[libx264 @ 0x7f9f62801200] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 32% 20% 31%  2%  3%  4%  3%  3%  3%
-[libx264 @ 0x7f9f62801200] i8c dc,h,v,p: 95%  2%  3%  0%
-[libx264 @ 0x7f9f62801200] Weighted P-Frames: Y:0.0% UV:0.0%
-[libx264 @ 0x7f9f62801200] ref P L0: 96.1%  0.4%  1.8%  1.8%
-[libx264 @ 0x7f9f62801200] kb/s:58.92
+frame=   17 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   26 fps=0.0 q=-1.0 Lsize=      20kB time=00:00:00.76 bitrate= 217.1kbits/s speed=0.787x    
+video:19kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 6.336553%
+[libx264 @ 0x7f94e1001200] frame I:1     Avg QP: 2.36  size: 16876
+[libx264 @ 0x7f94e1001200] frame P:7     Avg QP: 5.65  size:   110
+[libx264 @ 0x7f94e1001200] frame B:18    Avg QP: 5.67  size:    68
+[libx264 @ 0x7f94e1001200] consecutive B-frames:  7.7%  0.0%  0.0% 92.3%
+[libx264 @ 0x7f94e1001200] mb I  I16..4: 97.6%  0.0%  2.4%
+[libx264 @ 0x7f94e1001200] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.1%  0.0%  0.0%  0.0%  0.0%    skip:99.9%
+[libx264 @ 0x7f94e1001200] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.0%  0.0%  0.0%  direct: 0.0%  skip:100.0%  L0: 0.0% L1:100.0% BI: 0.0%
+[libx264 @ 0x7f94e1001200] 8x8 transform intra:0.0% inter:0.0%
+[libx264 @ 0x7f94e1001200] coded y,uvDC,uvAC intra: 1.3% 2.8% 2.8% inter: 0.0% 0.0% 0.0%
+[libx264 @ 0x7f94e1001200] i16 v,h,dc,p: 99%  0%  1%  0%
+[libx264 @ 0x7f94e1001200] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 32% 20% 30%  2%  3%  3%  3%  3%  3%
+[libx264 @ 0x7f94e1001200] i8c dc,h,v,p: 95%  2%  3%  0%
+[libx264 @ 0x7f94e1001200] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x7f94e1001200] ref P L0: 97.1%  0.0%  0.0%  2.9%
+[libx264 @ 0x7f94e1001200] ref B L1: 97.4%  2.6%
+[libx264 @ 0x7f94e1001200] kb/s:174.28
 Exiting normally, received signal 15.

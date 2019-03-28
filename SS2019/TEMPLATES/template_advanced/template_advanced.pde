@@ -1,33 +1,59 @@
-color white = #f1f1f1;
-color red = #EC1A1A;
+// PROGRAMMING POSTERS 2019
+// ADVANCED PROCESSING TEMPLATE
+
+// Ihre Daten
 
 String Vorname ="Marie";
 String Nachname ="Mustermann";
 
 void setup() {  
-  size(586, 810, P2D);
-  pixelDensity(2);
+
+  // Postersetup (framework.de) ausführen
   posterSetup();
-  animation();
+
+  // Animationssequenz starten
+  seq.beginSequence();
+
+  ////////////////////////////////////////////////////////////
+
+  // Animation: Step 1
+
+  seq.beginStep();
+  seq.add(Ani.to(this, 2, "a", 5));
+  seq.endStep();
+
+
+  // Animation: Step 2
+
+  seq.beginStep();
+  seq.add(Ani.to(this, 2, "a", 5));
+  seq.endStep();
+
+
+  ////////////////////////////////////////////////////////////
+
+  // Animationssequenz beenden
+  seq.endSequence();
+
+  // Sequenz starten
+  seq.start();
 }
 
 void draw() {
+
   background(red);   
 
-  /////////////////////
-  // Das Poster-Design 
-  /////////////////////
-  
+  ////////////////////////////////////////////////////////////
 
   textFont(robotoRegular, 400);
   textAlign(CENTER, TOP);
   text("hi", width/2, 130); 
 
 
-  /////////////////////
-  // Das Branding 
-  /////////////////////
 
+  //////////////////////////////////////////////////////////// 
+
+  // branding (framework.de) ausführen
   branding();
   videoExport.saveFrame();
 }
