@@ -9,7 +9,6 @@ void setup() {
 
   posterSetup();
 
-  animation();
 }
 
 void draw() {

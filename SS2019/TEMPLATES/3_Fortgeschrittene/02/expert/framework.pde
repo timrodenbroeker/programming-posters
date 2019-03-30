@@ -29,13 +29,13 @@ void posterSetup() {
 
   textMode(SHAPE);
 
-  robotoRegular = createFont("Roboto-Regular.ttf", 400);
+  robotoRegular = createFont("../DATA/Roboto-Regular.ttf", 400);
 
   textFont(robotoRegular, 400);
 
   textAlign(CENTER, TOP);
 
-  videoExport = new VideoExport(this, sketchName+".mp4");
+  videoExport = new VideoExport(this, "../"+sketchName+".mp4");
   videoExport.setFrameRate(30);  
   videoExport.startMovie();
   
@@ -43,8 +43,6 @@ void posterSetup() {
   videoExportCropped.setFrameRate(30);  
   videoExportCropped.startMovie();  
 
-  Ani.init(this);
-  seq = new AniSequence(this);
 }
 
 PFont robotoRegular;
@@ -75,7 +73,7 @@ PShape mouseCursor;
 void drawMouse() {
   if (frameCount == 1){
       noCursor();
-      mouseCursor = loadShape("cursor.svg");
+      mouseCursor = loadShape("../DATA/cursor.svg");
   }
   pushMatrix();
   translate(0, 0);
