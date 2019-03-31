@@ -22,7 +22,7 @@ void settings() {
 }
 
 void posterSetup() {
-
+  
   imageMode(CENTER);
   p = createGraphics(POSTER_W, POSTER_H, P2D);
   branding = createGraphics(POSTER_W, POSTER_H, P2D);
@@ -48,25 +48,29 @@ void posterSetup() {
 PFont robotoRegular;
 
 void branding() {
-  p.textFont(robotoRegular, 11);
-  p.textAlign(LEFT, TOP);
-  p.pushMatrix();
-  p.translate(15, 770);
-  p.text(Vorname, 0, 0);
-  p.text(Nachname, 0, 12);
-  p.popMatrix();
-  p.pushMatrix();
-  p.translate(150, 770);
-  p.text("Programming", 0, 0);
-  p.text("Posters", 0, 12);
-  p.popMatrix();
-  p.textAlign(RIGHT, TOP);
-  p.pushMatrix();
-  p.translate(POSTER_W-15, 770);
-  p.text("2019", 0, 12);
-  p.popMatrix();
+  branding.beginDraw();
+  branding.fill(RED);
+  branding.noStroke();
+  branding.textFont(robotoRegular, 11);
+  branding.textAlign(LEFT, TOP);
+  branding.textMode(SHAPE);
+  branding.pushMatrix();
+  branding.translate(15, 770);
+  branding.text(Vorname, 0, 0);
+  branding.text(Nachname, 0, 12);
+  branding.popMatrix();
+  branding.pushMatrix();
+  branding.translate(150, 770);
+  branding.text("Programming", 0, 0);
+  branding.text("Posters", 0, 12);
+  branding.popMatrix();
+  branding.textAlign(RIGHT, TOP);
+  branding.pushMatrix();
+  branding.translate(POSTER_W-15, 770);
+  branding.text("2019", 0, 12);
+  branding.popMatrix();
+  branding.endDraw();
 }
-
 
 PShape mouseCursor;
 
