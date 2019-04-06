@@ -29,7 +29,7 @@ void posterSetup() {
 
   textMode(SHAPE);
 
-  robotoRegular = createFont("../DATA/Roboto-Regular.ttf", 400);
+
 
   textFont(robotoRegular, 400);
 
@@ -48,6 +48,10 @@ void posterSetup() {
 PFont robotoRegular;
 
 void branding() {
+  
+  if (frameCount == 1){
+     robotoRegular = createFont("../DATA/Roboto-Regular.ttf", 400); 
+  }
   branding.beginDraw();
   branding.fill(RED);
   branding.noStroke();
