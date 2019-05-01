@@ -1,7 +1,0 @@
-# Headline
-
-Text
-
-```
-code
-```
